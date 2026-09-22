@@ -174,7 +174,7 @@
 		data-click="embedding-step-title"
 	>
 		<div class="title-text flex w-max items-center gap-1">
-			Embedding
+			임베딩
 			<ZoomInOutline></ZoomInOutline>
 		</div>
 	</div>
@@ -184,7 +184,7 @@
 			<!-- token -->
 			<div class="column token-string relative">
 				{#if isEmbeddingExpanded}<div class="subtitle embedding-detail">
-						<TextbookTooltip id="token-embedding">Tokenization</TextbookTooltip>
+						<TextbookTooltip id="token-embedding">토큰화</TextbookTooltip>
 					</div>{/if}
 				{#each $tokens as token, index}
 					<div class="cell" class:last={index === $tokens.length - 1}>
@@ -196,7 +196,7 @@
 				<!-- token id and embedding -->
 				<div class="column token-embedding embedding-detail">
 					<div class="subtitle flex items-center gap-1">
-						<TextbookTooltip id="token-embedding"><span>Token<br />Embedding</span></TextbookTooltip
+						<TextbookTooltip id="token-embedding"><span>토큰<br />임베딩</span></TextbookTooltip
 						>
 						<!-- <HelpPopover
 							id="token-embedding"
@@ -244,7 +244,7 @@
 				<div class="column embedding-detail position-embedding">
 					<div class="subtitle flex gap-1">
 						<TextbookTooltip id="positional-encoding">
-							<span>Positional<br />Encoding</span>
+							<span>위치<br />인코딩</span>
 						</TextbookTooltip>
 						<!-- <HelpPopover
 							id="position-embedding"
@@ -267,7 +267,7 @@
 							</div>
 							<span class="index-val text-xs">
 								{#if index === 0}
-									<span class="label">position</span><br />
+									<span class="label">위치</span><br />
 								{/if}
 								<span class="val">{index}</span>
 							</span>

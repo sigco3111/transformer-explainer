@@ -11,7 +11,7 @@
 
 <CommonPopover
 	className="activation-popover"
-	title="GELU Activation"
+	title="GeLU 활성화 함수"
 	{offset}
 	{triggeredBy}
 	{trigger}
@@ -19,7 +19,7 @@
 	goTo="article-activation"
 >
 	<div class="activation-content">
-		Applies non-linear transformation to linearly transformed output to learn complex patterns.
+		선형 변환된 출력에 비선형 변환을 적용하여 복잡한 패턴을 학습할 수 있게 합니다.
 	</div></CommonPopover
 >
 

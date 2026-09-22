@@ -353,7 +353,7 @@
 				{showTooltip}
 			/>
 			<TextbookTooltip id="masked-self-attention">
-				<div class="matrix-label">Dot product</div>
+				<div class="matrix-label">내적(Dot product)</div>
 			</TextbookTooltip>
 
 			<Tooltip class="popover tooltip">
@@ -419,7 +419,7 @@
 				/>
 			</div>
 			<TextbookTooltip id="masked-self-attention">
-				<div class="matrix-label">Scaling · Mask</div>
+				<div class="matrix-label">스케일링 · 마스킹</div>
 			</TextbookTooltip>
 
 			<Tooltip class="popover tooltip">
@@ -488,7 +488,7 @@
 			</div>
 
 			<TextbookTooltip id="masked-self-attention">
-				<div class="matrix-label">Softmax</div>
+				<div class="matrix-label">소프트맥스</div>
 			</TextbookTooltip>
 			<Tooltip class="popover tooltip">
 				<Katex math={'\\text{softmax}(\\frac{QK^T}{\\sqrt{d_k}} + M)'}></Katex>
@@ -523,7 +523,7 @@
 			/>
 
 			<div class="matrix-label flex items-center gap-1">
-				Attention <ZoomInOutline></ZoomInOutline>
+				어텐션 <ZoomInOutline></ZoomInOutline>
 			</div>
 		</div>
 	</div>

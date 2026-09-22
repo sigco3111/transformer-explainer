@@ -14,7 +14,7 @@
 
 <div class="top-bar flex w-full items-center gap-4 px-10 py-2 pb-3" class:active={isActive}>
 	<div class="logo text-bold text-gray-700" data-click="logo">
-		T<span class="small">RANSFORMER</span> E<span class="small">XPLAINER</span>
+		트랜스포머<span class="small"> 익스플레이너</span>
 	</div>
 	<div class="inputs flex grow items-center">
 		<div class="input-wrapper w-full" class:active={isActive}>

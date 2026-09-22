@@ -147,7 +147,7 @@
 				class:selectDisabled
 				class="select-button inline-flex shrink-0 items-center justify-center border border-s-0 border-gray-200 bg-white px-3 py-2 text-center text-xs font-medium text-gray-900 first:rounded-s-lg first:border-s last:rounded-e-lg"
 			>
-				Examples<ChevronDownOutline class="pointer-events-none h-4 w-4 text-gray-500" />
+				예시<ChevronDownOutline class="pointer-events-none h-4 w-4 text-gray-500" />
 			</button>
 			<Dropdown bind:open={dropdownOpen} class="example-dropdown">
 				{#each inputTextExample as text, index}
@@ -180,7 +180,7 @@
 						bind:this={inputRef}
 						contenteditable={!disabled}
 						class="text-box"
-						placeholder="Test your own input text"
+						placeholder="직접 텍스트 입력해 보기"
 						on:focus={onFocusInput}
 						on:input={onInput}
 						on:keydown={handleKeyDown}
@@ -212,14 +212,14 @@
 				{/if}
 				{#if $isMobile}
 					<span class="helper-text"
-						>Try the examples. Please use a desktop computer to input GPT-2 prompts directly.</span
-					>
-				{:else if $isLoaded && $isFetchingModel}
-					<span class="helper-text"
-						>Try the examples while GPT-2 model is being downloaded (600MB)</span
-					>
-				{:else if exceedLimit}
-					<span class="helper-text">You can enter up to {wordLimit} words.</span>
+						>예시를 사용해 보세요. GPT-2 프롬프트 직접 입력은 데스크톱에서 가능합니다.</span
+						>
+						{:else if $isLoaded && $isFetchingModel}
+						<span class="helper-text"
+						>GPT-2 모델 다운로드(약 600MB) 중에는 예시를 사용하세요</span
+						>
+						{:else if exceedLimit}
+						<span class="helper-text">최대 {wordLimit} 단어까지 입력할 수 있습니다.</span>
 				{/if}
 			</div>
 		</ButtonGroup>
@@ -233,7 +233,7 @@
 			type="submit"
 			on:click={handleSubmit}
 		>
-			Generate
+			생성
 		</button>
 	</form>
 	<div class="parameters" data-click="input-parameters">

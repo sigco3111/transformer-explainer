@@ -304,7 +304,7 @@
 	};
 </script>
 
-<WeightPopoverCard id="mlp-down" title={'MLP Compression'} bind:isAnimationActive {timeline}>
+<WeightPopoverCard id="mlp-down" title={'MLP 압축(Compression)'} bind:isAnimationActive {timeline}>
 	<div class="mlp-weight-popover weight-popover-content flex items-center justify-start">
 		<div class="matrix flex flex-col items-center">
 			<div class="tokens" style={`gap:${tokenGap}px`}>
@@ -315,8 +315,8 @@
 		</div>
 		<div class="matrix flex flex-col items-center">
 			<div class="title flex items-center gap-1">
-				Expanded Embeddings <HelpPopover id="mlp-down-emgeddings" 
-					>{`Expanded latent vectors through MLP expansion layer.`}</HelpPopover
+				확장된 임베딩 <HelpPopover id="mlp-down-emgeddings" 
+					>{`MLP 확장 계층을 통과한 확장 잠재 벡터입니다.`}</HelpPopover
 				>
 			</div>
 			<div class="flex">
@@ -339,8 +339,8 @@
 		</div>
 		<div class="matrix flex flex-col items-center">
 			<div class="title flex items-center gap-1">
-				Compression Weights <HelpPopover id="mlp-down-weights" 
-					>{`Projects expanded latent vectors back to original space. \nParameters that learned in training, fixed in prediction.`}</HelpPopover
+				압축 가중치 <HelpPopover id="mlp-down-weights" 
+					>{`확장된 잠재 벡터를 다시 원래 차원 공간으로 투영합니다. \n학습 단계에서 학습되며 예측 시에는 고정됩니다.`}</HelpPopover
 				>
 			</div>
 			<div class="flex gap-0">
@@ -362,8 +362,8 @@
 		<div class="operator"><div class="symbol plus px-3">+</div></div>
 		<div class="matrix flex flex-col items-center">
 			<div class="title flex items-center gap-1">
-				Compression Bias <HelpPopover id="mlp-down-bias" 
-					>{`Offsets added after compression. \nParameters that learned in training, fixed in prediction.`}</HelpPopover
+				압축 편향 <HelpPopover id="mlp-down-bias" 
+					>{`압축 이후에 더해지는 오프셋입니다. \n학습 단계에서 학습되며 예측 시에는 고정됩니다.`}</HelpPopover
 				>
 			</div>
 			<Matrix
@@ -383,7 +383,7 @@
 			<div class="symbol equal px-4">=</div>
 		</div>
 		<div class="matrix flex flex-col items-center">
-			<div class="title">Compressed <br />Embeddings</div>
+			<div class="title">압축된 <br />임베딩</div>
 			<div class="flex">
 				<Matrix
 					className="mlp-down-out"

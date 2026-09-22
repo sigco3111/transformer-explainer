@@ -11,7 +11,7 @@
 
 <CommonPopover
 	className="ln-popover"
-	title="Layer Normalization"
+	title="층 정규화(Layer Normalization)"
 	{offset}
 	{triggeredBy}
 	{trigger}
@@ -19,7 +19,7 @@
 	goTo="article-ln"
 >
 	<div class="ln-content">
-		Normalizes layer input to have a standard distribution for stability.
+		학습 안정성을 위해 계층 입력을 표준 분포로 정규화합니다.
 	</div></CommonPopover
 >
 

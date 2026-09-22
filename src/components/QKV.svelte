@@ -83,8 +83,8 @@
 						<div class="sub-vector head-rest">
 							{#if vectorHoverIdx !== index}<span>Q</span>{/if}
 						</div>
-					</div>
-					<div class={`sub-vector key relative flex grow flex-col ${keyVectorColor}`}>
+						</div>
+						<div class={`sub-vector key relative flex grow flex-col ${keyVectorColor}`}>
 						<VectorCanvas colorScale="red" active={vectorHoverIdx === index} />
 						<div
 							class={`sub-vector x1-12 head1 ${keyHeadVectorColor} absolute`}
@@ -93,8 +93,8 @@
 						<div class="sub-vector head-rest">
 							{#if vectorHoverIdx !== index}<span>K</span>{/if}
 						</div>
-					</div>
-					<div class={`sub-vector value relative flex grow flex-col ${valVectorColor}`}>
+						</div>
+						<div class={`sub-vector value relative flex grow flex-col ${valVectorColor}`}>
 						<VectorCanvas colorScale="green" active={vectorHoverIdx === index} />
 						<div
 							class={`sub-vector x1-12 head1 ${valHeadVectorColor} absolute`}

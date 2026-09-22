@@ -303,7 +303,7 @@
 	<div class="head-title absolute bottom-2 right-3 text-right text-gray-400">
 		<TextbookTooltip id="multi-head">
 			<span class="title-text"
-				>Head {$attentionHeadIdxTemp + 1} of {$modelMeta.attention_head_num}</span
+				>전체 {$modelMeta.attention_head_num}개 헤드 중 {$attentionHeadIdxTemp + 1}번째</span
 			></TextbookTooltip
 		>
 		<button

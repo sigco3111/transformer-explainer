@@ -28,11 +28,11 @@ export const isFetchingModel = writable(true);
 export const isLoaded = writable(false);
 
 export const inputTextExample = [
-	'Data visualization empowers users to',
-	'Artificial Intelligence is transforming the',
-	'As the spaceship was approaching the',
-	'On the deserted planet they discovered a',
-	'IEEE VIS conference highlights the'
+	'데이터 시각화는 사용자가',
+	'인공지능은 사회의 다양한 분야를',
+	'우주선이 행성에 접근하던 중',
+	'황량한 행성에서 그들이 발견한 것은',
+	'IEEE VIS 컨퍼런스는 올해 가장'
 ];
 
 const initialExIdx = 0;

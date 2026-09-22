@@ -310,7 +310,7 @@
 	};
 </script>
 
-<WeightPopoverCard id="mlp-up" title={'MLP Expansion'} bind:isAnimationActive {timeline}>
+<WeightPopoverCard id="mlp-up" title={'MLP 확장(Expansion)'} bind:isAnimationActive {timeline}>
 	<div class="mlp-weight-popover weight-popover-content flex items-center justify-start">
 		<div class="matrix flex flex-col items-center">
 			<div class="tokens" style={`gap:${tokenGap}px`}>
@@ -321,8 +321,8 @@
 		</div>
 		<div class="matrix flex flex-col items-center">
 			<div class="title flex items-center gap-1">
-				Embeddings<HelpPopover id="mlp-emgeddings" 
-					>{`Embeddings transformed through attention mechanism.`}</HelpPopover
+				임베딩<HelpPopover id="mlp-emgeddings" 
+					>{`어텐션 메커니즘을 거치며 변환된 임베딩입니다.`}</HelpPopover
 				>
 			</div>
 			<Matrix
@@ -340,8 +340,8 @@
 		<div class="operator"><div class="symbol mul">&times;</div></div>
 		<div class="matrix flex flex-col items-center">
 			<div class="title flex items-center gap-1">
-				Expansion Weights<HelpPopover id="mlp-weights" 
-					>{`Projects embedding vectors to expanded latent space. \nParameters were learned in training, fixed in prediction.`}</HelpPopover
+				확장 가중치<HelpPopover id="mlp-weights" 
+					>{`임베딩 벡터를 확장된 잠재 공간으로 투영합니다. \n이 파라미터는 학습 단계에서 학습되며 예측 시에는 고정됩니다.`}</HelpPopover
 				>
 			</div>
 			<div class="flex gap-0">
@@ -363,8 +363,8 @@
 		<div class="operator"><div class="symbol plus">+</div></div>
 		<div class="matrix flex flex-col items-center">
 			<div class="title flex items-center gap-1">
-				Expansion Bias <HelpPopover id="mlp-bias" 
-					>{`Offsets added after expansion. \nParameters that learned in training, fixed in prediction.`}</HelpPopover
+				확장 편향 <HelpPopover id="mlp-bias" 
+					>{`확장 이후에 더해지는 오프셋입니다. \n학습 단계에서 학습되며 예측 시에는 고정됩니다.`}</HelpPopover
 				>
 			</div>
 			<Matrix
@@ -392,7 +392,7 @@
 			</div>
 		</div> -->
 		<div class="matrix flex flex-col items-center">
-			<div class="title">Expanded <br />Embeddings</div>
+			<div class="title">확장된 <br />임베딩</div>
 			<div class="flex">
 				<Matrix
 					className="mlp-out"

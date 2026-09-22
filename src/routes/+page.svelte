@@ -64,12 +64,15 @@
 		return unsubscribe;
 	});
 
-	// Fetch model onnx
+	// Fetch model onnx from the separate models branch (raw.githubusercontent.com).
+	// Models are NOT in the deployed bundle; they live in `models-branch`.
+	const MODEL_BRANCH_BASE =
+		'https://raw.githubusercontent.com/sigco3111/transformer-explainer/models-branch/static';
 	const fetchModel = async () => {
 		const chunkNum = 63; //TODO: move to model meta
 		const chunkUrls = Array(chunkNum)
 			.fill(0)
-			.map((d, i) => `${base}/model-v2/gpt2.onnx.part${i}`);
+			.map((d, i) => `${MODEL_BRANCH_BASE}/model-v2/gpt2.onnx.part${i}`);
 
 		// Fetch from cache
 		const { hasCache, mergedArray } = await fetchAndMergeChunks(chunkUrls);

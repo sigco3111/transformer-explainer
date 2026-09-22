@@ -59,12 +59,12 @@
 				class="more-btn mt-1 text-blue-600 hover:underline"
 				on:click={(e) =>
 					onClickReadMore(e, goTo, {
-						value: title
-					})}
-				data-click={`read-more-btn-${className}`}
-			>
-				Read more
-			</div>
+							value: title
+						})}
+					data-click={`read-more-btn-${className}`}
+					>
+					자세히 보기 →
+					</div>
 		{/if}
 	</div></Popover
 >

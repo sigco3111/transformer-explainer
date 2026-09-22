@@ -308,7 +308,7 @@
 	// };
 </script>
 
-<WeightPopoverCard id="qkv" title={'Query Key Value'} bind:isAnimationActive {timeline}>
+<WeightPopoverCard id="qkv" title={'쿼리·키·밸류(Q·K·V)'} bind:isAnimationActive {timeline}>
 	<div class="weight-popover-content flex items-center justify-start">
 		<div class="matrix flex flex-col items-center">
 			<div class="tokens" style={`gap:${tokenGap}px`}>
@@ -319,8 +319,8 @@
 		</div>
 		<div class="matrix flex flex-col items-center">
 			<div class="title flex items-center gap-1 self-end">
-				Embeddings<HelpPopover id="qkv-emgeddings" 
-					>{`Embeddings originate from tokens \nbut evolve through blocks, becoming \nabstract representations.`}</HelpPopover
+				임베딩<HelpPopover id="qkv-emgeddings" 
+					>{`임베딩은 토큰에서 출발하지만 블록을 거치며 점차 추상적인 표현으로 변화합니다.`}</HelpPopover
 				>
 			</div>
 			<!-- (tokenLen, 768) -->
@@ -339,8 +339,8 @@
 		<div class="operator"><div class="symbol mul">&times;</div></div>
 		<div class="matrix flex flex-col items-center">
 			<div class="title flex items-center gap-1">
-				Q·K·V Weights<HelpPopover id="qkv-weights" 
-					>{`Transforms embedding vectors into Query, Key, and Value vectors. \nParameters were learned in training, fixed in prediction.`}</HelpPopover
+				Q·K·V 가중치<HelpPopover id="qkv-weights" 
+					>{`임베딩 벡터를 쿼리, 키, 밸류 벡터로 변환합니다. \n이 파라미터는 학습 단계에서 학습되며 예측 시에는 고정됩니다.`}</HelpPopover
 				>
 			</div>
 			<div class="flex gap-0">
@@ -362,8 +362,8 @@
 		<div class="operator"><div class="symbol plus">+</div></div>
 		<div class="matrix flex flex-col items-center">
 			<div class="title flex items-center gap-1">
-				Q·K·V Bias<HelpPopover id="qkv-bias" 
-					>{`Offsets added after transformation. \nParameters that learned in training, fixed in prediction.`}</HelpPopover
+				Q·K·V 편향<HelpPopover id="qkv-bias" 
+					>{`변환 이후에 더해지는 오프셋입니다. \n학습 단계에서 학습되며 예측 시에는 고정됩니다.`}</HelpPopover
 				>
 			</div>
 			<Matrix
