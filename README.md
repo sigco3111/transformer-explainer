@@ -1,7 +1,7 @@
 # 🧠 트랜스포머 익스플레이너 — Transformer Explainer (한글판)
 
 <p align="center">
-  <img width="900" alt="트랜스포머 익스플레이너 한글판 미리보기" src="static/preview/preview_te_korean.png">
+  <img width="900" alt="트랜스포머 익스플레이너 한글판 미리보기" src="static/preview/teaser.png">
 </p>
 
 > GPT-2 모델을 브라우저에서 직접 실행하며, 트랜스포머가 한 단어씩 다음 단어를 예측하는 과정을 인터랙티브하게 시각화한 학습 도구입니다.
